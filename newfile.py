@@ -1,32 +1,17 @@
 
-
-# code
-wallet = 5000
-smart_phone = 1000
-
-# le prix du telephone est inferieur à 1000€
-if  smart_phone <= wallet or smart_phone > 1000  :
-	print("l’achat est possible ")
-	wallet = wallet - smart_phone
-else:
-	print("l’achat est impossible, vous navez que ()€  " . format(wallet) )
-	
-text = ("l’achat est possible ", "l’achat est imposible")[smart_phone <= 1000 ]
-print(text)
-print(wallet)		
-	
+# exanple : systeme de verification de mot de passe
+password = input("entrer votre mot de passe")
+password_length = len (password)
+print(password_length)
 
 
-
-
-
-
-
-
-
-
-
-
+# verifier si le mot de passe est inferieur à 8 caracteres
+if password_length <=  8:
+	print("mot de psse trop court! ")
+elif	  8 < password_length <= 12:
+		print("mot de passe moyen")
+else :
+	print("mot de passe parfait")
 
 
 
