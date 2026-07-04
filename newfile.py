@@ -1,14 +1,34 @@
 
-# recolter une premiere note
-note1 = int (input (" entrer la premiere note"))
-# recolter une second note 
-note2 = int(input ("entrer la second note"))
-# recolter la dernier note 
-note3 = int(input ("entrer la dernier note"))
-# calculer la moyen  result  = (note1 + note2 + note3)  
-result =  (note1 + note2 + note3)  /3
-# afficher la resultat
-print("la  moyen de l’élève est de  " + str (result  ))
+
+# code
+wallet = 5000
+smart_phone = 1000
+
+# le prix du telephone est inferieur à 1000€
+if  smart_phone <= wallet or smart_phone > 1000  :
+	print("l’achat est possible ")
+	wallet = wallet - smart_phone
+else:
+	print("l’achat est impossible, vous navez que ()€  " . format(wallet) )
+	
+text = ("l’achat est possible ", "l’achat est imposible")[smart_phone <= 1000 ]
+print(text)
+print(wallet)		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
